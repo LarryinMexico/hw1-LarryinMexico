@@ -6,6 +6,6 @@ summary <- function(input_path, output_path){
   result <- data.frame(set = paste0("input", substr(input_path, length, length)), 
                      weight = max_weight, 
                      height = max_height)
-  write.csv(result, file = output_path, row.names = FALSE)
+  write.csv(result, file = output_path, row.names = FALSE, quote = FALSE)
 }
 #summary("./example/input1.csv", "./example/output1_test.csv")
