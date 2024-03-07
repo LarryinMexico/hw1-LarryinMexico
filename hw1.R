@@ -1,4 +1,4 @@
-my_summary <- function(input_path, output_path){
+summary <- function(input_path, output_path){
   input <- read.csv(input_path)
   length <- nchar(input_path)
   set_name <- substr(input_path, length-4, length-4)
@@ -9,5 +9,4 @@ my_summary <- function(input_path, output_path){
                      height = max_height)
   write.csv(result, file = output_path, row.names = FALSE)
 }
-#縮短
-#my_summary("./example/input3.csv", "./example/output3_test.csv")
+#summary("./example/input1.csv", "./example/output1_test.csv")
