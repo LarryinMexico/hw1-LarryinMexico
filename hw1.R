@@ -8,5 +8,5 @@ summary <- function(input_path, output_path){
   write.csv(result, file = output_path, quote = FALSE, row.names = FALSE)
 }
 
-summary("./example/input1.csv", "./example/output1_test1.csv")
+#summary("./example/input1.csv", "./example/output1_test1.csv")
 
